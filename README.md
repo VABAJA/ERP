@@ -22,7 +22,16 @@ Para la base de datos se usará MYSQL (por definir el gestor).
 - [ ] Módulo de ayuda.
 
 **BACK END:**
-        (Lista las acciones aquí )
+- [ ] El usuario debe poder acceder a la aplicación mediante un usuario y contraseña.
+- [ ] El usuario debe poder acceder a una pagina con los registros de servicios
+- [ ] El usuario debe poder acceder a una pagina de información de cliente.
+- [ ] El usuario debe tener fácil acceso a un botón para generar una factura.
+- [ ] Cuando se realice una factura debe aparecer una ventana de advertencia para el usuario.
+- [ ] El usuario debe poder acceder a una página para registrar los datos del cliente.
+- [ ] El super usuario debe tener acceso a la pagina de servicios generados por cada usuario.
+- [ ] El super usuario debe acceder a la vista general de servicios.
+- [ ] El usuario debe tener la capacidad de registrar a un usuario.
+
         
        
 **Hosting**
