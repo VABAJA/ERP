@@ -41,3 +41,7 @@ Se revisarán las opciones para el hospedaje.
 **Fechas propuestas de cumplimiento.**
 
 Se plantean dos meses para la primer parte del desarrollo, buscando que se complete en 1 mes, a partir de cuando se comente el segundo commit en            este README.
+
+
+FIGMA: Diagrama de Flujo
+https://www.figma.com/file/lpxmhVfHoSbXsrNMJtwz0r/Untitled?node-id=0%3A1&t=EnC3n3pJawhMyi5A-0
