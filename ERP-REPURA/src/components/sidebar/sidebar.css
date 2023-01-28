@@ -1,0 +1,17 @@
+.containerSideBar {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-top: 30px;
+    margin-down: 30p;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.contList {
+    display: flex;
+    justify-content: center;
+}
