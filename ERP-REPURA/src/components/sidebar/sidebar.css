@@ -1,9 +1,11 @@
 .containerSideBar {
     display: flex;
     flex-direction: column;
-    width: 30%;
-    margin-top: 30px;
-    margin-down: 30p;
+    width: 20%;
+    min-height: 100vh;
+    align-items: center;
+    row-gap: 48px;
+    background-color: var(--background-sidebar);
 }
 
 .logo {

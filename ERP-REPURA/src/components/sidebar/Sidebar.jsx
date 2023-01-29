@@ -1,17 +1,18 @@
 import "./sidebar.css";
+import logo from "../../assets/RepuraLogoNew 1.svg"
 
 const Sidebar = () => {
   return (
     <>
       <div className="containerSideBar">
         <div className="logo">
-          <h1>"LogoDelCliente"</h1>
+          <img src={logo} alt="LogoRepura" />
 
         </div>
         <div className="contList">
 
           <ul>
-            <li className="text-indigo-600">Facturación</li>
+            <li className="text-indigo-100">Facturación</li>
           </ul>
         </div>
       </div>

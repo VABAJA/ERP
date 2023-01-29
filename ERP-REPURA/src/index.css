@@ -4,10 +4,12 @@
 
 :root {
   --background-color: #8AC3E8;
+  --background-sidebar: rgba(0 , 0 , 0, 0.2);
 }
-
+html {
+  height: 100%;
+}
 body {
   background-color: var(--background-color);
-  max-height: 100%;
 
 }
