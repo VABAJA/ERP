@@ -5,6 +5,8 @@
 :root {
   --background-color: #8AC3E8;
   --background-sidebar: rgba(0 , 0 , 0, 0.2);
+  --background-form: #B8BBC6;
+  --blanco: #FFFFFF;
 }
 html {
   height: 100%;
@@ -12,4 +14,9 @@ html {
 body {
   background-color: var(--background-color);
 
+}
+.mainContainer {
+display: grid;
+grid-template-columns: 20% 80%;
+justify-items: center;
 }

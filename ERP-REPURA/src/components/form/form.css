@@ -1,0 +1,19 @@
+.contForm {
+    width: 70%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: var(--background-form);
+    border-radius: 10px;
+}
+input {
+    background-color: var(--blanco);
+    border-radius: 5px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
