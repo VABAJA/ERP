@@ -1,0 +1,43 @@
+/* NUEVO CLIENTE */
+.contForm {
+    margin-top: 5px;
+    width: 80%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: var(--background-form);
+}
+
+.campos {
+
+    margin: 30px;
+    align-items: center;
+    display: grid;
+    grid-template-areas: "LABEL INPUT";
+}
+
+.contForm .campos {
+    grid-area: INPUT;
+    width: 100%;
+}
+
+.contForm label {
+    grid-area: LABEL;
+    width: 50%;
+}
+.input{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 460px) {
+    .contForm{
+        width: 100%;
+    }
+    .campos{
+        grid-template-areas: "LABEL"
+                             "INPUT";
+    }
+    .conftForm label {
+        width: 100%;
+    }
+     
+}

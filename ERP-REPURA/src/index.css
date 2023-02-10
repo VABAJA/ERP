@@ -3,10 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --background-color: #8AC3E8;
+  --background-color: #0167ac;
   --background-sidebar: rgba(0 , 0 , 0, 0.2);
-  --background-form: #B8BBC6;
+  --background-form: #e6e9f7;
   --blanco: #FFFFFF;
+  --buttonHoverText: #4f46e5;
 }
 html {
   height: 100%;

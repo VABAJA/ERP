@@ -1,14 +1,23 @@
+
+import { useState } from 'react'
 import Sidebar from "./components/sidebar/Sidebar"
-import Form from "./components/form/Form"
+import NuevoCliente from "./components/forms/NuevoCliente"
 
 
 function App() {
 
+  const [nuevoCliente, setNuevoCliente] = useState([]);
+
   return (
     <>
       <div className="mainContainer">
+
         <Sidebar />
-        <Form />
+        <NuevoCliente
+          nuevoCliente={nuevoCliente}
+          setNuevoCliente={setNuevoCliente}
+        />
+
       </div>
     </>
   )
