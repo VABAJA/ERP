@@ -6,6 +6,7 @@
   --background-color: #0167ac;
   --background-sidebar: rgba(0 , 0 , 0, 0.2);
   --background-form: #e6e9f7;
+  /* --background-inputs: #0167ac; */
   --blanco: #FFFFFF;
   --buttonHoverText: #4f46e5;
 }
@@ -20,4 +21,8 @@ body {
 display: grid;
 grid-template-columns: 20% 80%;
 justify-items: center;
+}
+input {
+  background-color: var(--background-form);
+  border-radius: 50px;
 }
