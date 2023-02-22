@@ -1,26 +1,27 @@
 
 import { useState } from 'react'
-import Sidebar from "./components/sidebar/Sidebar"
-import NuevoCliente from "./components/forms/NuevoCliente"
-
+import { Routes, Route } from 'react-router-dom'
+import Dashboard from './components/Dashboard'
+import Sidebar from './components/sidebar/Sidebar'
 
 function App() {
 
-  const [nuevoCliente, setNuevoCliente] = useState([]);
 
   return (
     <>
       <div className="mainContainer">
 
         <Sidebar />
-        <NuevoCliente
-          nuevoCliente={nuevoCliente}
-          setNuevoCliente={setNuevoCliente}
-        />
-
+        <Routes>
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/facturacion" />
+        </Routes>
       </div>
+
     </>
   )
 }
+
+
 
 export default App

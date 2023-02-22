@@ -1,4 +1,5 @@
 import "./sidebar.css";
+import { Link } from 'react-router-dom'
 import logo from "../../assets/RepuraLogoNew 1.svg"
 
 const Sidebar = () => {
@@ -12,7 +13,7 @@ const Sidebar = () => {
         <div className="contList">
 
           <ul>
-            <li className="text-indigo-100">Facturación</li>
+            <li><Link link to="/facturacion">Facturación </Link></li>
           </ul>
         </div>
       </div>
