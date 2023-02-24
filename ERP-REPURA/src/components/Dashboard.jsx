@@ -1,12 +1,16 @@
-import NuevoCliente from "./forms/NuevoCliente";
-// import Sidebar from "./sidebar/Sidebar";
+import '../App.css'
+import Sidebar from "./Sidebar"
+import PorTimbrar from "../components/PorTimbrar"
+
 
 
 const Dashboard = () => {
     return (
         <>
-            <NuevoCliente />
-
+        <div className="containerSideBar">
+            <Sidebar />
+        </div>
+        <PorTimbrar />
 
         </>
     )

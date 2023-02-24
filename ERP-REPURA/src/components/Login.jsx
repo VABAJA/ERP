@@ -1,23 +1,13 @@
-import useState from "react";
-import logoImage from "../../assets/RepuraLogoNew 1.svg"
-import "./login.css";
+import logoImage from "../assets/RepuraLogoNew 1.svg";
 
-const login = ({ login, setLogin }) => {
-    {
-        const [username, setUsername] = useState('');
-        const [password, setPassword] = useState('');
-
-    }
+const Login = () => {
     return (
-
         <>
             <div className="loginContainer">
-
 
                 <div className="logo">
                     <img src={logoImage} alt="imagenLogo" />
                 </div>
-
                 <div className="login">
                     <form action="">
 
@@ -33,14 +23,12 @@ const login = ({ login, setLogin }) => {
 
                         <button type="submit">
                             Enviar
-
                         </button>
-
                     </form>
                 </div>
-
             </div>
         </>
-
     )
 }
+
+export default Login

@@ -1,21 +1,25 @@
-
-import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
+import ProtectedRoutes from './util/ProtectedRoutes'
+// import '../src/App.css'
 import Dashboard from './components/Dashboard'
-import Sidebar from './components/sidebar/Sidebar'
+import Facturacion from './components/Facturacion'
+import Login from './components/Login'
 
 function App() {
-
-
   return (
     <>
-      <div className="mainContainer">
+      <div className='mainContainer'>
 
-        <Sidebar />
         <Routes>
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/facturacion" />
+
+          <Route element={<ProtectedRoutes />}>
+            <Route path="/" element={<Login />} />
+
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/facturacion" element={<Facturacion />} />
+          </Route>
         </Routes>
+        {/* </div> */}
       </div>
 
     </>

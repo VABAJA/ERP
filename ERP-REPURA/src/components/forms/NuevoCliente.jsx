@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./forms.css";
 
 const NuevoCliente = ({ nuevoCliente, setNuevoCliente }) => {

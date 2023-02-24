@@ -7,8 +7,10 @@
   --background-sidebar: rgba(0, 0, 0, 0.2);
   --background-form: #e6e9f7;
   --textoPlano: #ffff;
+  --background-widgets: #B7EAFA;
   /* --background-inputs: #0167ac; */
   --blanco: #FFFFFF;
+  --negro: #000;
   --buttonHoverText: #4f46e5;
 }
 
@@ -29,6 +31,7 @@ p, a {
   display: grid;
   grid-template-columns: 20% 80%;
   justify-items: center;
+  align-items: center;
 }
 
 input {
