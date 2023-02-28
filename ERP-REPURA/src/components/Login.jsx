@@ -11,17 +11,17 @@ const Login = () => {
                 <div className="login">
                     <form action="">
 
-                        <div className="userName">
-                            <label htmlFor="username">Nombre de Usuario</label>
-                            <input type="text" id="username" value="Nombre de Usuario" />
+                        <div className="input--login">
+                            <label className="input--login__label" htmlFor="username">Nombre de Usuario</label>
+                            <input className="input--login__input" type="text" id="username" placeholder="Nombre de Usuario" />
                         </div>
 
-                        <div className="password">
-                            <label htmlFor="password">Contraseña</label>
-                            <input type="password" id="password" value="Contraseña" />
+                        <div className="input--login">
+                            <label className="input--login__label" htmlFor="password">Contraseña</label>
+                            <input className="input--login__input" type="password" id="password" placeholder="Contraseña" />
                         </div>
 
-                        <button type="submit">
+                        <button className="boton--login" type="submit">
                             Enviar
                         </button>
                     </form>

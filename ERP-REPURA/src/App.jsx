@@ -1,6 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
 import ProtectedRoutes from './util/ProtectedRoutes'
-// import '../src/App.css'
 import Dashboard from './components/Dashboard'
 import Facturacion from './components/Facturacion'
 import Login from './components/Login'
@@ -8,9 +7,9 @@ import Login from './components/Login'
 function App() {
   return (
     <>
-      <div className='mainContainer'>
 
-        <Routes>
+      <Routes>
+        {/* <div className='mainContainer'> */}
 
           <Route element={<ProtectedRoutes />}>
             <Route path="/" element={<Login />} />
@@ -18,9 +17,8 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/facturacion" element={<Facturacion />} />
           </Route>
-        </Routes>
         {/* </div> */}
-      </div>
+      </Routes>
 
     </>
   )

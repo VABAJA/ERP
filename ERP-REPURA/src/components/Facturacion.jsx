@@ -4,8 +4,12 @@ const Facturacion = () => {
   return (
     <>
       <div>
+        <div className="mainContainer">
+          <div className="sideBar">
 
-        <NuevoCliente />
+          </div>
+          <NuevoCliente />
+        </div>
       </div>
 
     </>

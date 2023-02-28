@@ -7,8 +7,9 @@
   --background-sidebar: rgba(0, 0, 0, 0.2);
   --background-form: #e6e9f7;
   --textoPlano: #ffff;
+  --placeholders: #979797;
   --background-widgets: #B7EAFA;
-  /* --background-inputs: #0167ac; */
+  --background-inputs: #0167ac;
   --blanco: #FFFFFF;
   --negro: #000;
   --buttonHoverText: #4f46e5;
@@ -23,7 +24,8 @@ body {
 
 }
 
-p, a {
+p,
+a {
   color: var(--textoPlano);
 }
 
@@ -36,4 +38,100 @@ p, a {
 
 input {
   border-radius: 50px;
+}
+
+/* LOGIN */
+.loginContainer {
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+
+}
+
+.logo {
+  width: 100%;
+  height: 100%
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.input--login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.input--login__label {
+  color: var(--textoPlano);
+}
+
+.input--login__input {
+  border-radius: 7px;
+  color: var(--placeholders);
+  padding: 5px;
+}
+
+.boton--login {
+  background-color: var(--background-inputs);
+  border: solid 2px #fff;
+  border-radius: 7px;
+  padding: 5px;
+  color: #fff;
+}
+
+.boton--login:hover {
+  transition: 0.50s;
+  background-color: var(--buttonHoverText);
+}
+
+/* SIDEBAR */
+.containerSideBar {
+  display: flex;
+  flex-direction: column;
+  /* width: 20%; */
+  min-height: 100vh;
+  align-items: center;
+  row-gap: 48px;
+  background-color: var(--background-sidebar);
+  background-image: url(../../assets/water1.jpg);
+  position: center center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.contList {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  text-transform: uppercase;
+}
+
+/* WIDGET porTimbrar */
+.porTimbrar {
+  width: 200px;
+  height: 90px;
+  border-radius: 10px;
+  background-color: var(--background-widgets);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+p,
+h4 {
+  color: var(--negro) !important;
 }
