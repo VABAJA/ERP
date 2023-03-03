@@ -1,24 +1,27 @@
-import { Routes, Route } from 'react-router-dom'
-import ProtectedRoutes from './util/ProtectedRoutes'
-import Dashboard from './components/Dashboard'
-import Facturacion from './components/Facturacion'
-import Login from './components/Login'
+
+import { useState } from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Sidebar from './components/sidebar/Sidebar'
+import NuevoCliente from './components/forms/NuevoCliente'
+
 
 function App() {
   return (
     <>
-
-      <Routes>
-        {/* <div className='mainContainer'> */}
-
-          <Route element={<ProtectedRoutes />}>
-            <Route path="/" element={<Login />} />
-
+      {/* <Routes>
+        <Route path="/" element={<Dashboard />}>
+          <div className="mainContainer">
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/facturacion" element={<Facturacion />} />
-          </Route>
-        {/* </div> */}
+          </div>
+        </Route>
       </Routes>
+
+      <Sidebar />
+      <NuevoCliente
+        nuevoCliente={nuevoCliente}
+        setNuevoCliente={setNuevoCliente}
+      /> */}
+
 
     </>
   )
