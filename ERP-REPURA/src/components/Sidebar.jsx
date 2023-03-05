@@ -12,6 +12,7 @@ const Sidebar = () => {
         <div className="contList">
 
           <ul>
+            <li><Link link to="/dashboard">Inicio</Link></li>
             <li><Link link to="/facturacion">Facturación </Link></li>
           </ul>
         </div>

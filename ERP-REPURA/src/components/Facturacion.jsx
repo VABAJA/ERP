@@ -1,14 +1,24 @@
-import NuevoCliente from '../components/forms/NuevoCliente'
+// import NuevoCliente from '../components/forms/NuevoCliente'
+import Sidebar from './Sidebar'
+import PorTimbrar from "../components/PorTimbrar"
+import CreaFactura from '../components/CreaFactura'
 
 const Facturacion = () => {
   return (
     <>
       <div>
         <div className="mainContainer">
-          <div className="sideBar">
+
+          <div className="containerSideBar">
+            <Sidebar />
 
           </div>
-          <NuevoCliente />
+          <div className="gContainer">
+
+            <PorTimbrar />
+            <CreaFactura />
+          </div>
+          {/* <NuevoCliente /> */}
         </div>
       </div>
 

@@ -1,10 +1,4 @@
 
-import { useState } from 'react'
-import { Route, Routes } from 'react-router-dom'
-import Sidebar from './components/Sidebar'
-import NuevoCliente from './components/forms/NuevoCliente'
-
-
 function App() {
   return (
     <>

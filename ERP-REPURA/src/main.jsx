@@ -5,11 +5,21 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Login from './components/Login'
 import Dashboard from './components/Dashboard'
+import Facturacion from './components/Facturacion'
+import Pendientes from './components/Pendientes'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Login />,
+  },
+  {
+    path: '/facturacion',
+    element: <Facturacion />,
+  },
+  {
+    path: '/pendientes',
+    element: <Pendientes />,
   },
   {
     path: '/dashboard',

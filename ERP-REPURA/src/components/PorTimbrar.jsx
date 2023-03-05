@@ -1,11 +1,16 @@
+import { Link } from 'react-router-dom'
+
 const porTimbrar = () => {
     return (
         <>
-            <div className="porTimbrar">
+            <Link link to='/pendientes'>
+                <div className="widgets">
+                    <h4>Facturas Por Timbrar</h4>
+                    <p>8</p>
 
-                <h4>Facturas Por Timbrar</h4>
-                <p>8</p>
-            </div>
+                </div>
+
+            </Link>
         </>
     )
 }
