@@ -1,4 +1,5 @@
-import logoImage from "../assets/RepuraLogoNew 1.svg";
+import logo from "../assets/RepuraLogoNew 1.svg";
+import { Link } from "react-router-dom";
 
 const Login = () => {
     return (
@@ -6,7 +7,7 @@ const Login = () => {
             <div className="loginContainer">
 
                 <div className="logo">
-                    <img src={logoImage} alt="imagenLogo" />
+                    <img src={logo} alt="imagenLogo" />
                 </div>
                 <div className="login">
                     <form action="">
@@ -20,10 +21,11 @@ const Login = () => {
                             <label className="input--login__label" htmlFor="password">Contraseña</label>
                             <input className="input--login__input" type="password" id="password" placeholder="Contraseña" />
                         </div>
-
-                        <button className="boton--login" type="submit">
-                            Enviar
-                        </button>
+                        <Link to='/dashboard'>
+                            <button className="boton--login" type="submit">
+                                Enviar
+                            </button>
+                        </Link>
                     </form>
                 </div>
             </div>
