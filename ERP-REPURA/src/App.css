@@ -1,4 +1,48 @@
 /* 
+██████  ██       ██████  ██████   █████  ██      ███████ ███████ 
+██       ██      ██    ██ ██   ██ ██   ██ ██      ██      ██      
+██   ███ ██      ██    ██ ██████  ███████ ██      █████   ███████ 
+██    ██ ██      ██    ██ ██   ██ ██   ██ ██      ██           ██ 
+ ██████  ███████  ██████  ██████  ██   ██ ███████ ███████ ███████  */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --background-color: #0167ac;
+    --background-sidebar: rgba(0, 0, 0, 0.2);
+    --background-form: #e6e9f7;
+    --textoPlano: #ffff;
+    --placeholders: #979797;
+    --background-widgets: #B7EAFA;
+    --background-inputs: #0167ac;
+    --blanco: #FFFFFF;
+    --negro: #000;
+    --buttonHoverText: #4f46e5;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: var(--background-color);
+
+}
+
+p,
+a {
+    color: var(--textoPlano);
+}
+
+/* 
 ███    ███  █████  ██ ███    ██      ██████  ██████  ███    ██ ████████  █████  ██ ███    ██ ███████ ██████  
 ████  ████ ██   ██ ██ ████   ██     ██      ██    ██ ████   ██    ██    ██   ██ ██ ████   ██ ██      ██   ██ 
 ██ ████ ██ ███████ ██ ██ ██  ██     ██      ██    ██ ██ ██  ██    ██    ███████ ██ ██ ██  ██ █████   ██████  
@@ -22,16 +66,15 @@
        ██ ██ ██   ██ ██          ██   ██ ██   ██ ██   ██ 
   ███████ ██ ██████  ███████     ██████  ██   ██ ██   ██ 
                                                           */
-.containerSideBar {
+/* .containerSideBar {
     grid-area: a;
     display: flex;
     flex-direction: column;
-    /* width: 20%; */
     min-height: 100vh;
     align-items: center;
     row-gap: 48px;
     background-color: var(--background-sidebar);
-    background-image: url(../../assets/water1.jpg);
+    background-image: url(./assets//water1.jpg);
     position: center center;
 }
 
@@ -51,6 +94,60 @@ li {
 
 input {
     border-radius: 50px;
+} */
+.container {
+    display: flex;
+
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+}
+
+.sidebar {
+    /* background: #000; */
+    color: #fff;
+    height: 100vh;
+    width: 300px;
+    transition: all 0.5s;
+    background-image: url(./assets//water1.jpg);
+}
+
+.top_section {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.bars {
+    display: flex;
+    font-size: 25px;
+    margin-left: 50px;
+}
+.link{
+    display: flex;
+    color: #fff;
+    padding: 10px 15px;
+    gap: 15px; 
+    transition: all 0.5s;
+}
+.link:hover{
+    background: lightblue;
+    color: #000;
+    transition: all 0.5s;
+}
+.active{
+    background: lightskyblue;
+    color: #000;
+}
+.icon, .link_text{
+    font-size: 20px;
 }
 
 /*   
@@ -121,6 +218,62 @@ input {
     transition: 0.50s;
     background-color: var(--buttonHoverText);
 }
+
+/* 
+███    ██ ██    ██ ███████ ██    ██  ██████       ██████ ██      ██ ███████ ███    ██ ████████ ███████ 
+████   ██ ██    ██ ██      ██    ██ ██    ██     ██      ██      ██ ██      ████   ██    ██    ██      
+██ ██  ██ ██    ██ █████   ██    ██ ██    ██     ██      ██      ██ █████   ██ ██  ██    ██    █████   
+██  ██ ██ ██    ██ ██       ██  ██  ██    ██     ██      ██      ██ ██      ██  ██ ██    ██    ██      
+██   ████  ██████  ███████   ████    ██████       ██████ ███████ ██ ███████ ██   ████    ██    ███████ 
+                                                                                                        */
+
+.contForm {
+    margin-top: 5px;
+    width: 80%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: var(--background-form);
+}
+
+.campos {
+
+    margin: 30px;
+    align-items: center;
+    display: grid;
+    grid-template-areas: "LABEL INPUT";
+}
+
+.contForm .campos {
+    grid-area: INPUT;
+    width: 100%;
+}
+
+.contForm label {
+    grid-area: LABEL;
+    width: 50%;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 460px) {
+    .contForm {
+        width: 100%;
+    }
+
+    .campos {
+        grid-template-areas: "LABEL"
+            "INPUT";
+    }
+
+    .conftForm label {
+        width: 100%;
+    }
+
+}
+
 /* 
 ██     ██ ██ ██████   ██████  ███████ ████████ ███████ 
 ██     ██ ██ ██   ██ ██       ██         ██    ██      

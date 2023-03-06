@@ -1,12 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import './index.css'
+import './App.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Login from './components/Login'
-import Dashboard from './components/Dashboard'
-import Facturacion from './components/Facturacion'
+import Login from './pages/Login'
+import Dashboard from './pages/Dashboard'
+import Facturacion from './pages/Facturacion'
 import Pendientes from './components/Pendientes'
+import CreaFactura from './components/CreaFactura'
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: '/pendientes',
     element: <Pendientes />,
+  },
+  {
+    path: '/CreaFactura',
+    element: <CreaFactura />,
   },
   {
     path: '/dashboard',

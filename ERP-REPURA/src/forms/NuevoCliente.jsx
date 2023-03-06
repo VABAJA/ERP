@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./forms.css";
 
 const NuevoCliente = ({ nuevoCliente, setNuevoCliente }) => {
   const [nombre, setNombre] = useState('');
