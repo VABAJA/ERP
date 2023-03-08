@@ -4,18 +4,16 @@ import Sidebar from "./Sidebar"
 const CreaFactura = () => {
     return (
         <>
-
-
-            <div className="gContainer">
-
-                <Link link to='/CreaFactura'>
-                    <div className="widgets">
-
+        <Boton onclick={() => }>Nueva Factura</Boton>
+            {/* <Link link to='/nuevafactura'>
+                <div className="widgets">
+                    <div className="widgets__content">
                         <h4>Crea una Nueva Factura</h4>
+
                     </div>
-                </Link>
-            </div>
-            {/* <NuevoCliente /> */}
+
+                </div>
+            </Link> */}
 
         </>
     )

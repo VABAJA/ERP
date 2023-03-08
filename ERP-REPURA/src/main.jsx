@@ -7,7 +7,7 @@ import Login from './pages/Login'
 import Dashboard from './pages/Dashboard'
 import Facturacion from './pages/Facturacion'
 import Pendientes from './components/Pendientes'
-import CreaFactura from './components/CreaFactura'
+import Nuevafactura from './pages/Nuevafactura'
 
 const router = createBrowserRouter([
   {
@@ -23,8 +23,8 @@ const router = createBrowserRouter([
     element: <Pendientes />,
   },
   {
-    path: '/CreaFactura',
-    element: <CreaFactura />,
+    path: '/nuevafactura',
+    element: <Nuevafactura />,
   },
   {
     path: '/dashboard',

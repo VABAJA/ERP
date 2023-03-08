@@ -4,11 +4,12 @@ const porTimbrar = () => {
     return (
         <>
             <Link link to='/pendientes'>
-                <div className="widgets">
+                <div className="widgets__content">
+
                     <h4>Facturas Por Timbrar</h4>
                     <p>8</p>
-
                 </div>
+
 
             </Link>
         </>

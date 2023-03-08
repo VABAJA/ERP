@@ -42,6 +42,10 @@ a {
     color: var(--textoPlano);
 }
 
+a {
+    display: block;
+}
+
 /* 
 ███    ███  █████  ██ ███    ██      ██████  ██████  ███    ██ ████████  █████  ██ ███    ██ ███████ ██████  
 ████  ████ ██   ██ ██ ████   ██     ██      ██    ██ ████   ██    ██    ██   ██ ██ ████   ██ ██      ██   ██ 
@@ -53,10 +57,25 @@ a {
 .mainContainer {
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-template-areas:
-        "a b";
-    justify-items: center;
-    align-items: center;
+    grid-template-areas: "a b";
+    justify-items: flex-start;
+    align-items: flex-start;
+}
+
+/*   
+   ██████  ███████ ███    ██ ███████ ██████   █████  ██           ██████  ██████  ███    ██ ████████  █████  ██ ███    ██ ███████ ██████  
+  ██       ██      ████   ██ ██      ██   ██ ██   ██ ██          ██      ██    ██ ████   ██    ██    ██   ██ ██ ████   ██ ██      ██   ██ 
+  ██   ███ █████   ██ ██  ██ █████   ██████  ███████ ██          ██      ██    ██ ██ ██  ██    ██    ███████ ██ ██ ██  ██ █████   ██████  
+  ██    ██ ██      ██  ██ ██ ██      ██   ██ ██   ██ ██          ██      ██    ██ ██  ██ ██    ██    ██   ██ ██ ██  ██ ██ ██      ██   ██ 
+   ██████  ███████ ██   ████ ███████ ██   ██ ██   ██ ███████      ██████  ██████  ██   ████    ██    ██   ██ ██ ██   ████ ███████ ██   ██ 
+   */
+.gContainer {
+    grid-area: b;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+
 }
 
 /*   
@@ -66,36 +85,9 @@ a {
        ██ ██ ██   ██ ██          ██   ██ ██   ██ ██   ██ 
   ███████ ██ ██████  ███████     ██████  ██   ██ ██   ██ 
                                                           */
-/* .containerSideBar {
-    grid-area: a;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    align-items: center;
-    row-gap: 48px;
-    background-color: var(--background-sidebar);
-    background-image: url(./assets//water1.jpg);
-    position: center center;
-}
 
-.logo {
-    display: flex;
-    justify-content: center;
-}
-
-.contList {
-    display: flex;
-    justify-content: center;
-}
-
-li {
-    text-transform: uppercase;
-}
-
-input {
-    border-radius: 50px;
-} */
 .container {
+    grid-area: a;
     display: flex;
 
 }
@@ -130,36 +122,32 @@ main {
     font-size: 25px;
     margin-left: 50px;
 }
-.link{
+
+.link {
     display: flex;
     color: #fff;
     padding: 10px 15px;
-    gap: 15px; 
+    gap: 15px;
     transition: all 0.5s;
 }
-.link:hover{
+
+.link:hover {
     background: lightblue;
     color: #000;
     transition: all 0.5s;
 }
-.active{
+
+.active {
     background: lightskyblue;
     color: #000;
 }
-.icon, .link_text{
+
+.icon,
+.link_text {
     font-size: 20px;
 }
 
-/*   
-   ██████  ███████ ███    ██ ███████ ██████   █████  ██           ██████  ██████  ███    ██ ████████  █████  ██ ███    ██ ███████ ██████  
-  ██       ██      ████   ██ ██      ██   ██ ██   ██ ██          ██      ██    ██ ████   ██    ██    ██   ██ ██ ████   ██ ██      ██   ██ 
-  ██   ███ █████   ██ ██  ██ █████   ██████  ███████ ██          ██      ██    ██ ██ ██  ██    ██    ███████ ██ ██ ██  ██ █████   ██████  
-  ██    ██ ██      ██  ██ ██ ██      ██   ██ ██   ██ ██          ██      ██    ██ ██  ██ ██    ██    ██   ██ ██ ██  ██ ██ ██      ██   ██ 
-   ██████  ███████ ██   ████ ███████ ██   ██ ██   ██ ███████      ██████  ██████  ██   ████    ██    ██   ██ ██ ██   ████ ███████ ██   ██ 
-   */
-.gContainer {
-    grid-area: b;
-}
+
 
 /* 
 ██       ██████   ██████  ██ ███    ██ 
@@ -284,16 +272,71 @@ main {
 
 .widgets {
     width: 200px;
-    height: 90px;
+    height: 51px;
     border-radius: 10px;
     background-color: var(--background-widgets);
+}
+
+.widgets__content {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    align-content: flex-start;
 }
 
 p,
 h4 {
     color: var(--negro) !important;
 }
+
+/* 
+███    ███  ██████  ██████   █████  ██      
+████  ████ ██    ██ ██   ██ ██   ██ ██      
+██ ████ ██ ██    ██ ██   ██ ███████ ██      
+██  ██  ██ ██    ██ ██   ██ ██   ██ ██      
+██      ██  ██████  ██████  ██   ██ ███████ */
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    width: 500px;
+    min-height: 246px;
+    background: #F5EEEE;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+}
+
+.modal__cerrar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+
+}
+
+.modal__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E8E8E8;
+
+}
+
+.modal__body {}
