@@ -13,10 +13,7 @@ const Modal = ({ children, estado, cambiarEstado }) => {
                             <path d="M10 10l4 4m0 -4l-4 4" />
                         </svg></i>
 
-                        <div className="modal__body">
-
-                            <h1>¿El Cliente ya está registrado?</h1>
-                        </div>
+                        
                         {children}
                     </div>
                 </div>

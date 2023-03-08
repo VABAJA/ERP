@@ -46,6 +46,7 @@ a {
     display: block;
 }
 
+
 /* 
 ███    ███  █████  ██ ███    ██      ██████  ██████  ███    ██ ████████  █████  ██ ███    ██ ███████ ██████  
 ████  ████ ██   ██ ██ ████   ██     ██      ██    ██ ████   ██    ██    ██   ██ ██ ████   ██ ██      ██   ██ 
@@ -316,7 +317,7 @@ h4 {
     min-height: 246px;
     background: #F5EEEE;
     position: relative;
-    border-radius: 5px;
+    border-radius: 25px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 20px;
 }
@@ -339,4 +340,19 @@ h4 {
 
 }
 
-.modal__body {}
+.modal__body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.modal__footer {
+    display: flex;
+    height: 117px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icons{
+    width: 100px;
+    height: 100px;
+}
