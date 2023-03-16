@@ -1,18 +1,18 @@
 import Sidebar from "../components/Sidebar"
-// import NuevoCliente from "../forms/NuevoCliente"
+import NuevoCliente from "../forms/NuevoCliente"
 
-const Nuevafactura = () => {
+const Nuevocliente = () => {
     return (
         <>
             <div className="mainContainer">
                 <Sidebar />
-                {/* <div className="gContainer">
+                <div className="gContainer">
                     <NuevoCliente />|
-                </div> */}
+                </div>
             </div>
 
         </>
     )
 }
 
-export default Nuevafactura
+export default Nuevocliente

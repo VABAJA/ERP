@@ -8,6 +8,7 @@ import Dashboard from './pages/Dashboard'
 import Facturacion from './pages/Facturacion'
 import Pendientes from './components/Pendientes'
 import Nuevafactura from './pages/Nuevafactura'
+import Nuevocliente from './pages/Nuevocliente'
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: '/nuevafactura',
     element: <Nuevafactura />,
+  },
+  {
+    path: '/nuevocliente',
+    element: <Nuevocliente />,
   },
   {
     path: '/dashboard',
