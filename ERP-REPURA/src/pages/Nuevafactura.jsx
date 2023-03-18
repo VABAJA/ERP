@@ -1,14 +1,14 @@
 import Sidebar from "../components/Sidebar"
-// import NuevoCliente from "../forms/NuevoCliente"
+import NuevaFactura from "../forms/NuevaFactura"
 
 const Nuevafactura = () => {
     return (
         <>
             <div className="mainContainer">
                 <Sidebar />
-                {/* <div className="gContainer">
-                    <NuevoCliente />|
-                </div> */}
+                <div className="gContainer">
+                    <NuevaFactura />|
+                </div>
             </div>
 
         </>
