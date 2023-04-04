@@ -6,7 +6,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Login from './pages/Login'
 import Dashboard from './pages/Dashboard'
 import Facturacion from './pages/Facturacion'
-import Pendientes from './components/Pendientes'
 import Nuevafactura from './pages/Nuevafactura'
 import Nuevocliente from './pages/Nuevocliente'
 
@@ -18,10 +17,6 @@ const router = createBrowserRouter([
   {
     path: '/facturacion',
     element: <Facturacion />,
-  },
-  {
-    path: '/pendientes',
-    element: <Pendientes />,
   },
   {
     path: '/nuevafactura',
