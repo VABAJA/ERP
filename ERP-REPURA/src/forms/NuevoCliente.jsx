@@ -1,5 +1,7 @@
 import { useState } from "react";
-
+//Agregar Metodo de Pago
+//Forma de Pago
+//uso de CFDI
 const NuevoCliente = ({ nuevoCliente, setNuevoCliente }) => {
   const [nombre, setNombre] = useState('');
   const [rfc, setRFC] = useState('');

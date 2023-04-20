@@ -1,4 +1,4 @@
-import {  AiOutlineDashboard, AiOutlineBars, AiOutlineFileDone } from 'react-icons/ai'
+import {  AiOutlineDashboard, AiOutlineBars, AiOutlineFileDone, AiOutlineUser } from 'react-icons/ai'
 import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react'
 import logo from "../assets/RepuraLogoNew 1.svg"
@@ -17,6 +17,11 @@ const Sidebar = ({children}) => {
       path: "/facturacion",
       name: "Facturacion",
       icon: <AiOutlineFileDone />
+    },
+    {
+      path: "/miCuenta",
+      name: "Mi Cuenta",
+      icon: <AiOutlineUser />
     }
   ]
   return (

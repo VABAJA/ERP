@@ -1,13 +1,19 @@
 import Sidebar from "../components/Sidebar"
-import Pendientes from "../components/Pendientes"
+import { Facturas } from "../components/Facturas"
 
 const Facturacion = () => {
   return (
     <>
       <div className="mainContainer">
         <Sidebar />
-        <div className="gContainer">
-          <Pendientes />
+        <div className="containerFacturas">
+          <Facturas 
+          status="Pendientes"
+          cuenta="10"  />
+
+          <Facturas 
+          status="Timbradas"
+          cuenta = "5" />
 
 
         </div>

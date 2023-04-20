@@ -9,6 +9,7 @@ const NuevaFactura = ({ nuevaFactura, setNuevaFactura }) => {
     const [direccion, setDireccion] = useState('');
     const [telefono, setTelefono] = useState('');
     const [contacto, setContacto] = useState('');
+    const [producto, setProducto] = useState('');
 
     const [error, setError] = useState(false)
 
@@ -35,6 +36,7 @@ const NuevaFactura = ({ nuevaFactura, setNuevaFactura }) => {
         setDireccion('')
         setTelefono('')
         setContacto('')
+        setProducto('')
     }
 
     //Objeto de factura
@@ -45,7 +47,8 @@ const NuevaFactura = ({ nuevaFactura, setNuevaFactura }) => {
         razonSocial,
         direccion,
         telefono,
-        contacto
+        contacto,
+        producto
     }
     return (
         <div className="contForm">
@@ -145,6 +148,29 @@ const NuevaFactura = ({ nuevaFactura, setNuevaFactura }) => {
                         value={telefono}
                         onChange={(e) => setContacto(e.target.value)}
                         disabled />
+                </div>
+
+                <h2>Productos a Facturar</h2>
+
+                <div className="campos">
+                    <label htmlFor="producto">Producto</label>
+                    <select value={producto}
+                        onChange={(e) => setProducto(e.target.value)}
+                        className="border-2 w-9/12 p-2 mt-2 placeholder-gray-400 rounded-md">
+                        <option value='Botellon Solo Liquido'>Botellon Solo Liquido</option>
+                        <option value='Botellon a como Dato'>Botellon a como Dato</option>
+                        <option value='Botellon como agua desmineralizada'>Botellon como agua desmineralizada</option>
+                        <option value='Reposicion de Botellon'>Reposicion de Botellon</option>
+                        <option value='Botellitas Caja 1/2 L'>Botellitas caja 1/2 L</option>
+                        <option value='Botellitas Caja 1 L'>Botellitas Caja 1 L</option>
+                        <option value='Botellitas Cada 1 1/2 L'>Botellitas Cada 1 1/2 L</option>
+                        <option value='Botellitas Cada 5 L'>Botellitas Cada 5 L</option>
+                        <option value='Estante a como Dato 10 B'>Estante a como Dato 10 B</option>
+                        <option value='Estante a como Dato 20 B'>Estante a como Dato 20 B</option>
+                        <option value='Estante a como Dato 40 B'>Estante a como Dato 40 B</option>
+                        <option value='Agua Desmineralizada a Granel'>Agua Desmineralizada a Granel</option>
+                        <option value='Otros'>Otros</option>
+                    </select>
                 </div>
 
                 <div className="input">

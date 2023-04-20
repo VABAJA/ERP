@@ -1,11 +1,11 @@
-import { useState } from 'react'
 import '../App.css'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Sidebar from "../components/Sidebar"
 import PorTimbrar from '../components/PorTimbrar'
 // import CreaFactura from '../components/CreaFactura'
 import Modal from '../components/Modal'
-
+//Agregar Buscador de Clientes
 const Dashboard = () => {
     const [estadoModal1, cambiarEstadoModal1] = useState(false);
 
